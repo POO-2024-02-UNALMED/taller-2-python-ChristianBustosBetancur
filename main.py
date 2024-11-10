@@ -29,7 +29,7 @@ class Auto:
                 print("Las piezas no son originales")
                 original = False
         if original == True:
-            print("Las piezas son originales")
+            print("Auto Original")
 
 class Asiento:
     def __init__(self,color,precio,registro):
