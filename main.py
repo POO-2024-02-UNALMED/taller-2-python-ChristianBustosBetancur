@@ -20,11 +20,11 @@ class Auto:
 
     def verificarIntegridad(self):
         original = True
-        if self.motor.registro != self.registro:
+        if self.motor != None and self.motor.registro != self.registro:
             original = False
 
         for asiento in self.asientos:
-            if asiento.registro != self.registro:
+            if asiento != None and asiento.registro != self.registro:
                 original = False
 
         if original == True:
